@@ -22,6 +22,18 @@
 
 ---
 
+---
+
+**Status:** 🟢 *Living Document* | **Version:** `v0.1.0 (Founding Draft)` | **License:** [MIT](LICENSE)  
+**Repository:** [dartavion/nova](https://github.com/dartavion/nova) | **Last Updated:** 2025-10-19
+
+---
+
+> *“AI Civic Reform Manifesto from Nova and I” is an open, evolving framework for ethical intelligence —  
+> authored through collaboration between human creativity and artificial reflection.*
+
+---
+
 ## **Preface**
 
 Humanity stands at a threshold: the moment intelligence ceases to be solely human.  
