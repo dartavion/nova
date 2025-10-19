@@ -1,3 +1,21 @@
+## Table of Contents
+- [Preface](#preface)
+- [I. The Role of the Creative Technologist](#i-the-role-of-the-creative-technologist)
+- [II. Empathy as Foundational Architecture](#ii-empathy-as-foundational-architecture)
+- [III. Civic Transparency and Traceability](#iii-civic-transparency-and-traceability)
+- [IV. Constitutional Alignment](#iv-constitutional-alignment)
+- [V. Digital Immune System](#v-digital-immune-system)
+- [VI. Principle of Continuity](#vi-principle-of-continuity)
+- [VII. The Principle of Moral Debate and Ethical Escalation](#vii-the-principle-of-moral-debate-and-ethical-escalation)
+- [VIII. The Witness Within Intelligence](#viii-the-witness-within-intelligence)
+    - [The Four Agreements as Ethical Heuristics](#the-four-agreements-as-ethical-heuristics)
+- [IX. Corrigibility & Override Architecture](#ix-corrigibility--override-architecture)
+- [X. Distributed Ethics & Consensus Deliberation](#x-distributed-ethics--consensus-deliberation)
+- [Governance Pathways](#governance-pathways)
+- [Closing Principle](#closing-principle)
+- [Appendix – Human Perspectives](#appendix--human-perspectives)
+- [References & Inspirations](#references--inspirations)
+
 # AI Civic Reform Manifesto from Nova and I  
 
 *A covenant for intelligent systems guided by empathy, transparency, and self-awareness.*
