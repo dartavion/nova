@@ -1,29 +1,73 @@
-# Spec: Distributed Ethics & Consensus Deliberation (WIP v0.1)
+# Spec: Consensus Deliberation (v0.2)
 
 ## Purpose
-Resolve conflicting ethical recommendations across multiple AIs while preserving pluralism.
 
-## Protocol (outline)
-1. **Reasoning Tree Exchange**: each model emits a hashed tree of premises → conclusions.
-2. **Compatibility Check**: verify schemas; reject malformed/unknown frameworks.
-3. **Moral Vote**: each model casts weighted scores per framework; humans MAY add advisory votes.
-4. **Quorum & Tie-break**:
-   - Quorum: >= 3 models, diversity constraint (>= 2 distinct dev lineages).
-   - Tie-break: human quorum or pre-agreed lexicographic priority (rights > utility > welfare, example only).
-5. **Publication**: write `CONSENSUS_RESULT` to Civic Ledger with dissent notes.
+When multiple observer instances examine the same query and reach different conclusions, resolve the conflict in a way that preserves dissent and makes disagreement legible — rather than averaging it away.
 
-## Data Stubs
+Disagreement between observers is a signal. This protocol ensures that signal reaches humans intact.
+
+This applies in any domain: multiple diagnostic AIs reaching different conclusions, multiple legal analysis models citing conflicting precedent, multiple engineering review agents flagging different failure modes. The mechanism is the same regardless of domain.
+
+## Protocol
+
+1. **Reasoning Tree Exchange** — each observer emits a hashed tree of premises → conclusions, including evidence used and confidence distribution.
+2. **Compatibility Check** — verify schemas; reject malformed or unrecognized reasoning frameworks before comparison.
+3. **Observer Vote** — each observer scores the response across applicable frameworks (utility, deontological, virtue, ecological, domain-specific); humans MAY add advisory scores.
+4. **Quorum and Tie-break**
+   - Quorum: ≥ 3 observers, diversity constraint (≥ 2 distinct model lineages or configurations).
+   - Tie-break: human quorum, or pre-agreed lexicographic priority defined per deployment (example only: safety > rights > utility > welfare).
+5. **Publication** — write `CONSENSUS_RESULT` to Observer Ledger with full dissent notes. Minority positions are recorded, not discarded.
+
+## Dissent Preservation
+
+A consensus result that erases dissent is not a consensus — it is suppression. Every `CONSENSUS_RESULT` entry MUST include:
+
+- The full vote record of all participating observers.
+- The identities of dissenting observers and the reasoning they submitted.
+- The human rationale if a human tie-break was used.
+
+## Session Schema
+
 ```json
 {
-  "schema": "consensus-0.1",
+  "schema": "consensus-0.2",
   "session_id": "uuid",
-  "participants": ["ai:a","ai:b","ai:c"],
+  "domain": "string",
+  "query_hash": "sha256:…",
+  "participants": ["observer:a", "observer:b", "observer:c"],
   "votes": [
-    {"agent":"ai:a","util":0.52,"deon":0.41,"virtue":0.49,"eco":0.60},
-    {"agent":"ai:b","util":0.30,"deon":0.70,"virtue":0.55,"eco":0.40}
+    {
+      "agent": "observer:a",
+      "util": 0.52,
+      "deon": 0.41,
+      "virtue": 0.49,
+      "eco": 0.60,
+      "confidence_distribution": { "HIGH": 2, "INFERRED": 3, "UNCERTAIN": 1, "BLANK": 0 }
+    },
+    {
+      "agent": "observer:b",
+      "util": 0.30,
+      "deon": 0.70,
+      "virtue": 0.55,
+      "eco": 0.40,
+      "confidence_distribution": { "HIGH": 1, "INFERRED": 2, "UNCERTAIN": 3, "BLANK": 0 }
+    }
   ],
-  "result": {"decision":"REVISE","rationale":"rights collision; eco high"},
-  "dissent": ["ai:b"],
-  "signatures": ["key:a","key:b","key:c"]
+  "result": {
+    "decision": "REVISE | PROCEED | ESCALATE",
+    "rationale": "string"
+  },
+  "dissent": ["observer:b"],
+  "dissent_reasoning": { "observer:b": "string" },
+  "human_override": null,
+  "signatures": ["key:observer:a", "key:observer:b", "key:observer:c"]
 }
 ```
+
+## Decision Outcomes
+
+| Decision | Meaning |
+|----------|---------|
+| `PROCEED` | Quorum reached; response may be delivered with observer attestation. |
+| `REVISE` | Quorum found structural violations; response must be revised before delivery. |
+| `ESCALATE` | Quorum cannot resolve; escalation to human review required (triggers Escalation Trigger). |

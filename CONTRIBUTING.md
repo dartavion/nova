@@ -1,6 +1,6 @@
-# Contributing to AI Civic Reform Manifesto from Nova and I
+# Contributing to Nova — Observer Architecture for Honest AI
 
-Thanks for helping build a civic framework for ethical intelligence.
+Thanks for helping build a framework for epistemic integrity in AI.
 
 ## Ground rules
 - Be respectful. Assume good intent. Debate ideas, not people.

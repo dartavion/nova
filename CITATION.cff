@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "AI Civic Reform Manifesto from Nova and I"
+title: "Nova — Observer Architecture for Honest AI"
 message: "If you use this work, please cite it."
 authors:
   - family-names: "Nova"
@@ -8,8 +8,10 @@ authors:
     given-names: ""
 repository-code: "https://github.com/dartavion/nova"
 license: "MIT"
-version: "0.1.0"
+version: "0.2.0"
 date-released: "2025-10-19"
 abstract: >
-  A practical, ethical, and technical framework for AI systems grounded in empathy,
-  transparency, corrigibility, and civic oversight, including specs and prototypes.
+  A framework for epistemic integrity in AI systems — structural tools for closing
+  the honesty gap through the observer/witness principle, across any domain.
+  Includes the observer core spec, witness integrity proofs, escalation trigger,
+  consensus deliberation, and observer ledger primitives.

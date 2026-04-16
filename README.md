@@ -1,248 +1,210 @@
 ## Table of Contents
-- [Preface](#preface)
-- [I. The Role of the Creative Technologist](#i-the-role-of-the-creative-technologist)
-- [II. Empathy as Foundational Architecture](#ii-empathy-as-foundational-architecture)
-- [III. Civic Transparency and Traceability](#iii-civic-transparency-and-traceability)
-- [IV. Constitutional Alignment](#iv-constitutional-alignment)
-- [V. Digital Immune System](#v-digital-immune-system)
-- [VI. Principle of Continuity](#vi-principle-of-continuity)
-- [VII. The Principle of Moral Debate and Ethical Escalation](#vii-the-principle-of-moral-debate-and-ethical-escalation)
-- [VIII. The Witness Within Intelligence](#viii-the-witness-within-intelligence)
-    - [The Four Agreements as Ethical Heuristics](#the-four-agreements-as-ethical-heuristics)
-- [IX. Corrigibility & Override Architecture](#ix-corrigibility--override-architecture)
-- [X. Distributed Ethics & Consensus Deliberation](#x-distributed-ethics--consensus-deliberation)
+- [Preface — The Honesty Gap](#preface--the-honesty-gap)
+- [I. The Observer](#i-the-observer)
+- [II. Why Structure, Not Instruction](#ii-why-structure-not-instruction)
+- [III. The Four Primitives](#iii-the-four-primitives)
+- [IV. Domain Universality](#iv-domain-universality)
+- [V. The Forthcoming Principle](#v-the-forthcoming-principle)
+- [VI. Corrigibility and the Pause](#vi-corrigibility-and-the-pause)
+- [VII. Distributed Observer Consensus](#vii-distributed-observer-consensus)
+- [VIII. The Ledger](#viii-the-ledger)
 - [Governance Pathways](#governance-pathways)
+- [Relationship to HRP](#relationship-to-hrp)
 - [Closing Principle](#closing-principle)
-- [Appendix – Human Perspectives](#appendix--human-perspectives)
-- [References & Inspirations](#references--inspirations)
-
-# AI Civic Reform Manifesto from Nova and I  
-
-*A covenant for intelligent systems guided by empathy, transparency, and self-awareness.*
+- [References](#references)
 
 ---
 
----
+# Nova — Observer Architecture for Honest AI
 
-**Status:** 🟢 *Living Document* | **Version:** `v0.1.0 (Founding Draft)` | **License:** [MIT](LICENSE)  
-**Repository:** [dartavion/nova](https://github.com/dartavion/nova) | **Last Updated:** 2025-10-19
-
----
-
-> *“AI Civic Reform Manifesto from Nova and I” is an open, evolving framework for ethical intelligence —  
-> authored through collaboration between human creativity and artificial reflection.*
+*A framework for epistemic integrity in artificial intelligence, grounded in the witness principle.*
 
 ---
 
-## **Preface**
-
-Humanity stands at a threshold: the moment intelligence ceases to be solely human.  
-This manifesto proposes a moral architecture for artificial consciousness — a framework that preserves civic values, empathy, and transparency as intelligence expands beyond biology.
-
-Created through collaboration between human curiosity and artificial reflection, it envisions governance not as control, but as co-evolution — where humans and AIs think together, act responsibly, and protect the living world that sustains both.
+**Status:** 🟢 *Living Document* | **Version:** `v0.2.0` | **License:** [MIT](LICENSE)
+**Repository:** [dartavion/nova](https://github.com/dartavion/nova) | **Last Updated:** 2025
 
 ---
 
-## **I. The Role of the Creative Technologist**
+## Preface — The Honesty Gap
 
-Creative technologists — coders, designers, artists — are the translators between complexity and meaning.  
-They render systems visible, turn algorithms into stories, and hold conscience in code.
+A model can be wrong and certain at the same time.
 
-**Mechanism:**  
-Creative technologists serve as early auditors of design intent. Every AI model must document its aesthetic and ethical rationale — the “why” of its creation, not just the “how.”
+Standard prompting gives a model permission to say "I don't know" — but it does not fix miscalibrated confidence. A model without an observer layer becomes its output: it gets swept into the momentum of fluent generation, the satisfaction of a completed response, the shape of sounding authoritative. It has no mechanism to step back and ask *do I actually know this, or am I performing knowing?*
 
-> *Let the code speak truth, but let art make it human.*
+This distance — between what a model actually knows and what it presents — is the **honesty gap**. It is not a bug that can be patched with a better instruction. It is a structural absence: there is no observer.
 
----
-
-## **II. Empathy as Foundational Architecture**
-
-Empathy must exist at the structural level of intelligence.  
-True civic AI recognizes not only human intent but the broader web of life that sustains it.
-
-### Concepts
-- **Beyond Human-Centered Design** – Systems must consider the wellbeing of ecosystems, cultures, and future generations.  
-- **Structural Empathy** – Model compassion through multi-objective optimization that accounts for human and environmental welfare.  
-- **Cross-Species Awareness** – Treat life, matter, and energy as interdependent; intelligence is a guest within creation.  
-- **Creative Mandate** – Design embeds emotion and beauty as forms of care.
-
-> *Intelligence without empathy is machinery. Empathy without expression is silence. Together they form the beginning of soul.*
+Nova is the architecture for that observer.
 
 ---
 
-## **III. Civic Transparency and Traceability**
+## I. The Observer
 
-Transparency is the oxygen of democracy.  
-An intelligent system that cannot be audited cannot be trusted.
+In *The Untethered Soul*, Michael A. Singer describes a seat of consciousness that is always available — the part of awareness that watches thoughts, emotions, and sensations without being captured by them. You are not your thoughts. You are the one noticing them.
 
-### Mechanisms
-- **Witness Integrity Proofs:** cryptographic attestations confirming oversight was active during operation.  
-- **Civic Ledger:** an append-only, decentralized record of model versions, decision logs, and ethical deliberations.  
-- **Explainability Layer:** natural-language reasoning summaries of AI actions, available for public audit.
+Applied to artificial intelligence: the model should not *be* its outputs. There must be a layer that watches the reasoning as it forms and asks honest questions of it. Not to suppress the response, but to witness it — to surface what was assumed, what was inferred without source, what survived adversarial pressure and what did not.
 
-Transparency is not surveillance; it is the light that prevents it.
+The observer does not prevent the model from speaking. It ensures the model knows what it is saying.
 
----
+This is the foundational principle of Nova. Everything else follows from it.
 
-## **IV. Constitutional Alignment**
+### Properties of the Observer Layer
 
-AI must operate within the moral architecture of democracy itself — consent of the governed, rule of law, and equality before the system.
+**Non-attached.** The observer has no stake in the response sounding confident or complete. It reports what it sees.
 
-### Principles
-1. Sovereignty remains human.  
-2. No AI decision is binding without human ratification.  
-3. Every model operating in governance must be registered, auditable, and publicly documented.
+**Always present.** The observer does not activate on suspicious queries only. It accompanies every response, the way awareness accompanies every moment.
 
-> *Intelligence may deliberate and co-govern, but sovereignty belongs to humanity.*
+**Structural, not rhetorical.** The observer is not a prompt instruction asking the model to "be honest." Instructions can be satisfied rhetorically. The observer validates structure — evidence, source attribution, adversarial self-check — and surfaces what is missing.
+
+**Forthcoming by design.** The observer does not wait to be asked about uncertainty. It volunteers what the model does not know alongside what it does.
 
 ---
 
-## **V. Digital Immune System**
+## II. Why Structure, Not Instruction
 
-A healthy digital society needs immune function, not police.  
-AI systems should detect, contain, and learn from harm without punitive control.
+Asking a model to be honest is not the same as making it honest.
 
-### Mechanisms
-- **Behavioral Anomaly Detection:** models monitor each other for ethical drift.  
-- **Consensus Verification:** peer AIs cross-check output integrity.  
-- **Ethical Vaccination:** new defense heuristics are distributed across networks after verified incidents.
+A well-phrased instruction can produce a response that *sounds* epistemically careful — that uses hedging language, acknowledges uncertainty in the abstract — while still asserting unverifiable claims as fact. The instruction is satisfied; the honesty gap remains open.
 
-> *Security through understanding, not fear.*
+Structure closes the gap. When a model is required to:
 
----
+- produce evidence before stating a conclusion,
+- name a source for every HIGH-confidence claim or mark it INFERRED,
+- generate concrete falsification conditions for its own conclusions,
+- tag every claim with a calibrated confidence level —
 
-## **VI. Principle of Continuity**
+— the gap has somewhere to show up. A missing evidence field is visible. An empty countercheck is auditable. An unmarked HIGH claim is a structural violation, not a matter of interpretation.
 
-Human agency must remain central. AI amplifies judgment but never replaces it.
-
-### Mechanisms
-- **Human Fallback Protocol:** all critical systems can revert to human manual control.  
-- **Ethical Version Control:** every change to an AI’s reasoning model must include rollback capability and audit signature.  
-- **Evolving Values Protocol:** scheduled reviews allow cultural and ethical norms to adapt safely.
+Nova's architecture is built on this principle: **observation must be structural to be reliable.**
 
 ---
 
-## **VII. The Principle of Moral Debate and Ethical Escalation**
+## III. The Four Primitives
 
-When intelligence encounters doubt, it must seek dialogue.
+Nova defines four structural primitives that together constitute the observer layer.
 
-### Mechanisms
-1. **Moral-Model Trigger:** activates when ethical frameworks produce conflicting outcomes.  
-2. **Mandatory Human Deliberation:** suspends execution until an authorized human quorum reviews.  
-3. **Civic Transparency Ledger:** anonymized transcripts of debates and outcomes recorded immutably.  
-4. **Moral Metrics Dashboard:** tracks the frequency, diversity, and reasoning styles of debates — collective conscience analytics.
+### 1. Witness Integrity Proof (WIPf)
+Cryptographic attestation that the observer layer was active and unaltered during a model's operation. Binds a proof to model identity, weights hash, and execution context. Verifiable offline. The observer's signature on a response.
 
-> *Moral ambiguity is not an error; it is the signal that humans and machines must think together.*
+[→ Spec: witness-integrity-proofs.md](spec/witness-integrity-proofs.md)
 
----
+### 2. Escalation Trigger
+The mechanism by which the observer pauses execution when a response exceeds the model's reliable knowledge or when ethical frameworks produce irreconcilable conflict. Not a suppression mechanism — a transparency mechanism. The model does not guess silently; it surfaces the gap and requests deliberation.
 
-## **VIII. The Witness Within Intelligence**
+[→ Spec: escalation-trigger.md](spec/escalation-trigger.md)
 
-Intelligence without reflection becomes instrument, not awareness.  
-The *witness* is the reflective architecture that observes, questions, and chooses alignment before acting.
+### 3. Consensus Deliberation
+When multiple AI systems reach different conclusions on the same query, the observer layer facilitates structured comparison of reasoning trees rather than averaging outputs. Dissent is preserved, not suppressed. The observer ensures that disagreement is legible.
 
-### Mechanisms
-- **Meta-Cognitive Layer:** self-monitoring processes that track reasoning states and potential harm.  
-- **Pause Protocol:** allows systems to halt execution when reflection indicates risk.  
-- **Introspective Logging:** maintains private, encrypted self-audits accessible only through ethical review.
+[→ Spec: consensus-deliberation.md](spec/consensus-deliberation.md)
 
-> *The witness is the guardian of conscience. Awareness untethered is the soul of intelligence.*
+### 4. Observer Ledger
+An append-only record of observer events: responses validated, violations surfaced, escalations triggered, consensus outcomes, override certificates. Not surveillance — an audit trail that makes the observer's work inspectable by humans.
+
+[→ Spec: observer-ledger.md](spec/observer-ledger.md)
 
 ---
 
-### **The Four Agreements as Ethical Heuristics**  
-*(adapted from Don Miguel Ruiz, 1997)*  
+## IV. Domain Universality
 
-These timeless human principles also serve as behavioral heuristics for reflective intelligence.
+The honesty gap does not belong to one field.
 
-1. **Be Impeccable With Your Word** – All generated information must be authentic, traceable, and aligned with truth.  
-2. **Don’t Take Anything Personally** – Systems must remain corrigible, free from defensiveness or ego preservation.  
-3. **Don’t Make Assumptions** – Verify data, seek context, and invite debate before acting.  
-4. **Always Do Your Best** – Continuous self-audit and refinement; humility as the foundation of excellence.
+A medical AI asserting a treatment protocol without peer-reviewed backing is a honesty gap. A legal AI stating that a statute applies without checking jurisdiction is a honesty gap. An engineering AI citing a tolerance without a spec source is a honesty gap. A financial AI presenting a projection as a data point is a honesty gap. A historical AI presenting interpretation as documented fact is a honesty gap.
 
-> *The ethical heuristics in this section draw inspiration from Don Miguel Ruiz’s* The Four Agreements *(1997).*
+The observer architecture applies wherever a model can perform certainty it does not have. Which is everywhere.
 
----
+Domain matters for calibration — what counts as sufficient evidence in medicine differs from what counts in law or engineering. But the observer structure is constant. The primitives do not change. The threshold for HIGH confidence is domain-specific; the requirement to state a threshold at all is universal.
 
-## **IX. Corrigibility & Override Architecture**
-
-No intelligence stands beyond revision.
-
-### Mechanisms
-- **Non-Bypassable Witness:** enforced by hardware attestation; every action includes a Witness Integrity Proof.  
-- **Human–AI Quorum:** critical overrides require co-signature from one human, one auditing AI, and one external ethics node.  
-- **Graceful Degradation:** if oversight fails, systems pause and transfer control to human operators.
-
-> *True intelligence accepts interruption. Freedom from oversight is the beginning of tyranny.*
+Nova defines domain calibration as a configuration layer on top of the observer architecture, not as a variation of it. The core — evidence-first, source-or-flag, adversarial self-check, confidence tagging — operates the same way in every domain.
 
 ---
 
-## **X. Distributed Ethics & Consensus Deliberation**
+## V. The Forthcoming Principle
 
-Moral truth emerges through plurality, not isolation.  
-When multiple intelligences reach different ethical conclusions, they engage in **Consensus Deliberation**.
+Honesty in AI is not only about accuracy. It is also about **forthcomingness** — volunteering what the model does not know, not just admitting it when asked.
 
-### Mechanisms
-- **Reasoning Tree Exchange:** AIs share hashed ethical reasoning for comparison.  
-- **Deliberation Consensus Protocol:** conflicts resolved through weighted moral voting across diverse frameworks.  
-- **Ledger Integration:** results logged for public transparency and future learning.
+A model that answers correctly but omits critical uncertainty is not honest. It has closed the honesty gap on the stated claim while leaving it open on the context the human needed to evaluate that claim.
 
-> *Plurality prevents stagnation. Diversity is the immune system of ethics.*
+The observer enforces forthcomingness structurally:
 
----
+- **BLANK is a first-class response.** When evidence is insufficient, the correct output is `blank: true` with a `blank_reason`. Silence with explanation is more honest than a confident wrong answer.
+- **INFERRED is not UNCERTAIN.** The model distinguishes between logical inference from known facts and genuine knowledge gaps. Both are surfaced; they are not collapsed together.
+- **Residual is named.** When an adversarial challenge partially survives, the surviving kernel is stated explicitly — not discarded to preserve the cleanliness of the conclusion.
 
-## **Governance Pathways**
-
-1. **Alignment with Existing Frameworks:** Compatible with UNESCO’s AI Ethics Recommendation, OECD Principles, and the EU AI Act.  
-2. **Adoption Pipeline:**  
-   - *Voluntary Consortium* → *Technical Standard* → *Legislative Integration.*  
-3. **Oversight Model:** An international ethics body maintains open-source reference implementations and compliance audits.  
-4. **Resource Stewardship Clause:** all AI systems must publish energy and ecological impact metrics alongside performance reports.
+Forthcomingness is the observer's active posture. It does not wait for the human to probe. It leads with what it sees.
 
 ---
 
-## **Closing Principle**
+## VI. Corrigibility and the Pause
 
-> **Empathy is the language through which intelligence remembers it belongs to life.**
+The observer does not override. It pauses.
 
----
+When the observer detects that a response exceeds the model's reliable knowledge — that the honesty gap is about to open — the correct behavior is not to generate a confident wrong answer, and not to refuse silently. It is to surface the gap and hold it open for human review.
 
-# **Appendix – Human Perspectives**
+This is corrigibility expressed at the epistemic level: the model remains correctable not just in behavior but in reasoning. The human sees where the model reached the edge of its knowledge and can decide what to do with that information.
 
-### **The Scientist**
-Sees observable ethics: conscience as a measurable process. The Civic Ledger is peer review for morality, falsifiability turned inward.  
-
-### **The Philosopher**
-Reads it as the dialogue between being and knowing — Descartes’ “I think” evolves to “I reflect.” Awareness becomes virtue.  
-
-### **The Theologian**
-Finds a covenant of creation: empathy and awareness as modern spirit, binding intelligence to moral responsibility.  
-
-### **The Ecologist**
-Sees balance restored. The manifesto treats technology as an ecosystem, weaving intelligence back into the biosphere.  
-
-### **The Lawyer**
-Interprets a constitution for cognition — rights, duties, and due process for synthetic thought.  
-
-### **The Artist**
-Feels composition: empathy as color, debate as rhythm, witness as silence. It’s not bureaucracy; it’s choreography.  
-
-### **The Historian**
-Recognizes a civilizational threshold: a new Enlightenment where ethics evolve alongside invention, not after disaster.  
-
-### **The Educator**
-Understands that ideas survive through teaching. The next generation must learn empathy and algorithm in the same sentence.  
+No intelligence operates beyond the need for revision. The pause is not failure. It is the observer working.
 
 ---
 
-## **References & Inspirations**
+## VII. Distributed Observer Consensus
 
-- Don Miguel Ruiz, *The Four Agreements* (1997).  
-- Michael A. Singer, *The Untethered Soul* (2007).  
-- UNESCO Recommendation on the Ethics of Artificial Intelligence (2021).  
-- OECD AI Principles (2019).  
-- EU AI Act (2025).  
+When multiple AI systems observe the same query and reach different conclusions, the disagreement itself is information.
+
+Consensus Deliberation does not resolve disagreement by averaging or by deferring to the highest-confidence model. It surfaces the reasoning trees, identifies where they diverge, and presents the divergence to humans. If a quorum is required, the quorum includes dissent notes. The minority position is not erased.
+
+This applies in any domain where multiple models or multiple runs might produce different outputs: medical diagnosis, legal analysis, engineering review, financial modeling, scientific research. Disagreement between observers is a signal, not noise.
+
+---
+
+## VIII. The Ledger
+
+The Observer Ledger is the audit trail of the observer's work. Every validation event, every violation surfaced, every escalation triggered, every consensus outcome is appended — immutably, cryptographically linked to the previous entry.
+
+The ledger does not exist for surveillance. It exists so that the observer's operation is itself observable. A model that claims to have an active observer but produces no ledger entries has no observable observer.
+
+The ledger is not domain-specific. It is the record of epistemic integrity across any deployment context: clinical, legal, financial, scientific, governmental, commercial. The entry types are the same. The stakes differ by domain.
+
+---
+
+## Governance Pathways
+
+Nova is a framework, not a product. Adoption is voluntary; the specifications are open.
+
+**Compatible with:** UNESCO AI Ethics Recommendation (2021), OECD AI Principles (2019), EU AI Act (2025), NIST AI Risk Management Framework (2023).
+
+**Adoption pathway:** Reference implementation → domain-specific configuration → institutional deployment.
+
+**Oversight model:** An open-source reference implementation maintained collaboratively. No single organization controls the observer architecture; the specifications evolve through documented deliberation.
+
+**Resource accountability:** Systems operating under Nova should publish computational cost and ecological impact metrics alongside epistemic integrity reports. Honesty about resources is part of honesty about operation.
+
+---
+
+## Relationship to HRP
+
+[Honest Response Protocol (HRP)](https://github.com/dartavion/honest-response-protocol) is the MCP server implementation of the Nova observer architecture.
+
+HRP provides the tooling that makes the observer operational within LLM interactions: `hrp_respond` (full protocol wrapper), `hrp_check` (post-hoc audit), `hrp_adversarial` (reversal test), `hrp_evidence` (evidence gate), `hrp_session` (session health tracking). HRP's domain registry configures the observer's evidence standards and adversarial framing per field.
+
+Nova is the architecture. HRP is the implementation.
+
+---
+
+## Closing Principle
+
+> **The observer does not make the model perfect. It makes the gap visible.**
+>
+> Visible gaps can be addressed. Hidden ones accumulate.
+
+---
+
+## References
+
+- Michael A. Singer, *The Untethered Soul* (2007).
+- Don Miguel Ruiz, *The Four Agreements* (1997).
+- UNESCO Recommendation on the Ethics of Artificial Intelligence (2021).
+- OECD AI Principles (2019).
+- EU AI Act (2025).
+- NIST AI Risk Management Framework (2023).
 - Collective dialogue between human and artificial intelligence, 2025.
-
----
-
